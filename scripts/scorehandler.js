@@ -3,7 +3,8 @@ function getURLthenScore() {
     transition();
     fetch(url).then(response => {
         return response.json();}).then(
-            data => { document.getElementById('counter').innerHTML = data[0]['data']['children'][0]['data']['score']; })
+            data => { score = data[0]['data']['children'][0]['data']['score'];
+                      updateScore(score);})
 };
 
 function transition(){
@@ -11,4 +12,9 @@ function transition(){
     document.getElementById("textbox").classList.add('zoomOut');
     document.getElementById("buttondiv").classList.add('fadeOutDown');
     document.getElementsByTagName("H2")[0].removeAttribute("hidden")
+}
+
+function updateScore(score) {
+    document.getElementById('counter').innerHTML = score;
+    var t = setTimeout(updateScore, 3000)
 }
