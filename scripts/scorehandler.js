@@ -11,10 +11,10 @@ function transition(){
     document.getElementById("title").classList.add('fadeOutUp');
     document.getElementById("textbox").classList.add('zoomOut');
     document.getElementById("buttondiv").classList.add('fadeOutDown');
-    document.getElementsByTagName("H2")[0].removeAttribute("hidden")
-}
+    document.getElementsByTagName("H2")[0].removeAttribute("hidden");
+};
 
 function updateScore(score) {
     document.getElementById('counter').innerHTML = score;
-    var t = setTimeout(updateScore, 3000)
-}
+    var t = setTimeout(updateScore, 3000);
+};
