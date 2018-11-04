@@ -16,5 +16,5 @@ function transition(){
 
 function updateScore(score) {
     document.getElementById('counter').innerHTML = score;
-    var t = setTimeout(updateScore, 3000);
+    var t = setTimeout(getURLthenScore, 3000);
 };
