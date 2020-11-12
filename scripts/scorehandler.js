@@ -15,6 +15,6 @@ function transition(){
 };
 
 function updateScore(score) {
-    document.getElementById('counter').innerHTML = score + "\nUpvotes and counting...;
+    document.getElementById('counter').innerHTML = score + "\nUpvotes and counting...";
     var t = setTimeout(getURLthenScore, 5000);
 };
