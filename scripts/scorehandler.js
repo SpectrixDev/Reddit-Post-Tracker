@@ -12,7 +12,6 @@ function transition(){
     document.getElementById("textbox").classList.add('zoomOut');
     document.getElementById("buttondiv").classList.add('fadeOutDown');
     document.getElementsByTagName("H2")[0].removeAttribute("hidden");
-    document.getElementById("chartContainer").removeAttribute("hidden");
 };
 
 function updateScore(score) {
