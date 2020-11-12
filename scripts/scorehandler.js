@@ -1,5 +1,5 @@
 function getURLthenScore() {
-    var url = (document.getElementById('textbox').value).replace('www.', 'pay.').replace('http://', 'https://') +'.json?limit=1';
+    var url = (document.getElementById('textbox').value).replace('www.', 'pay.').replace('http://', 'https://') +'.json?limit=10';
     transition();
     fetch(url).then(response => {
         return response.json();}).then(
