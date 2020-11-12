@@ -1,5 +1,5 @@
 function getURLthenScore() {
-    var url = (document.getElementById('textbox').value).replace('www.', 'pay.').replace('http://', 'https://') +'.json?limit=10';
+    var url = (document.getElementById('textbox').value).replace('www.', 'pay.').replace('http://', 'https://') +'.json?limit=1';
     transition();
     fetch(url).then(response => {
         return response.json();}).then(
@@ -15,6 +15,6 @@ function transition(){
 };
 
 function updateScore(score) {
-    document.getElementById('counter').innerHTML = score;
-    var t = setTimeout(getURLthenScore, 3000);
+    document.getElementById('counter').innerHTML = score + "\nUpvotes and counting...;
+    var t = setTimeout(getURLthenScore, 5000);
 };
