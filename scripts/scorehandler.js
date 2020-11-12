@@ -33,12 +33,13 @@ var yVal = 100;
 var updateInterval = 1000;
 var dataLength = 20; // number of dataPoints visible at any point
 
+
 var updateChart = function (count) {
 
 	count = count || 1;
 
 	for (var j = 0; j < count; j++) {
-		yVal = yVal +  int(score);
+		yVal = yVal + score;
 		dps.push({
 			x: xVal,
 			y: yVal
