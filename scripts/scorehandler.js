@@ -26,7 +26,7 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	data: [{
 		type: "line",
 		dataPoints: dps
-	}]};
+	}]});
 
 var xVal = 0;
 var yVal = 100; 
